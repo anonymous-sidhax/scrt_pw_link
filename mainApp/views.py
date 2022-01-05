@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from cryptography.fernet import Fernet
+# from cryptography.fernet import Fernet
 
 # Create your views here.
 def homepage(request):
