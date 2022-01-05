@@ -14,21 +14,23 @@ from pathlib import Path
 import os
 import django_heroku
 
+from environ import Env
+
+env = Env()
+# reading .env file
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-m0h*+)mxza%@)2idn68i&o$1enrtaw#wg(n8eqin6b+s^12z8y'
+SECRET_KEY = 'MY_SCRET_KEY'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['scrt-pw-link.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['scrt-pw-link.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition

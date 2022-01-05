@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from cryptography.fernet import Fernet
 
 # from cryptography.fernet import Fernet
 
@@ -8,6 +9,7 @@ def homepage(request):
     return render(request, 'homepage.html')
 
 def get_secret_link(request):
+    print ("here")
     secret_key = request.POST.get('secret_key')
 
     key = Fernet.generate_key()
