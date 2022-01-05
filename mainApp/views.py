@@ -7,5 +7,4 @@ def homepage(request):
 
 def get_secret_link(request):
     secret_key = request.POST.get('secret_key')
-    print (secret_key)
-    return HttpResponse("Secret Key: ")
+    return HttpResponse("Secret Key: %s" %secret_key)
