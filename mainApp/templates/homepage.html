@@ -6,7 +6,14 @@
     </head>
 
     <body>
-        <textarea placeholder="Enter a secret here. Credentials, API keys, anything. Get a secure|encrypted link in return."></textarea>
+        
+        
+        <form action="/send-pass" method="post">
+            {% csrf_token %}
+            <textarea name="secret_key" placeholder="Enter a secret here. Credentials, API keys, anything. Get a secure|encrypted link in return."></textarea>
+            <input type="submit" value="Create a Secret Link">
+        </form>
+
     </body>
 
 </html>
