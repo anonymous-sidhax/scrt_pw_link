@@ -10,28 +10,39 @@
 
     <title>Output Text</title>
   </head>
+  <style>
+    body {
+      background: rgb(0,7,25);
+      background: linear-gradient(281deg, rgba(0,7,25,1) 0%, rgba(25,57,74,1) 50%, rgba(57,57,57,1) 100%);
+    }
+  </style>
   <body class="h-100 d-flex justify-content-center align-items-center">
     <main class="container p-5 h-100 text-center">
-      <div class="row">
-        <div class="col">
-          <h1>Processing Complete!</h1>
-          <h2>Here are your details:</h2>
+      <div class="row text-center">
+        <div class="col text-center w-full">
+          <h1 class="bg-success bg-gradient text-white">Processing Complete!</h1>
+          <h2 class="text-white">Here are your details:</h2>
         </div>
-      <div class="row">
-        <div class="col">
-          <p>Your entered text is:</p>
-          <p> {{Plain_Text}} </p>
+      <div class="row text-center">
+        <div class="col text-center mt-3 w-full">
+          <p class="fs-4 text-white">Your entered text is:</p>
+          <p class="bg-light py-2 fw-bold"> {{Plain_Text}} </p>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>Encrypted text is:</p>
-            <p> {{Cipher_or_Encrypted_Text}} </p>
+        <div class="row text-center">
+          <div class="col text-center mt-3 w-full">
+            <p class="fs-4 text-white">Encrypted text is:</p>
+            <p class="bg-light py-2 fw-bold"> {{Cipher_or_Encrypted_Text}} </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>Secret Key is:</p>
-            <p> {{Key}} </p>
+        <div class="row text-center">
+          <div class="col text-center mt-3 w-full">
+            <p class="fs-4 text-white">Secret Key is:</p>
+            <p class="bg-light py-2 fw-bold"> {{Key}} </p>
+          </div>  
+        </div>
+        <div class="row text-center">
+          <div class="col text-center mt-4 w-full">
+            <a href="{% url 'homepage' %}" class="btn btn-primary">Back To Home</a>
           </div>  
         </div>
       </div>
