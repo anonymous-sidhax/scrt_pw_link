@@ -1,0 +1,79 @@
+scrt-pw.link
+
+TextArea placeholder
+Done - Enter the Password or Secret to be Shared
+OR
+Done - Enter a secret here. Credentials, API keys, anything. Get a secure one-time link in return.
+
+Privacy Options:
+- Passphrase: It will encrypt the password entered above using this as the key.
+- Expire secret link and delete after: Expiry Date (30Days, 10Days, 7Days, 3Days, 1Day, 12hrs, 6hrs, 1hr, 30mins, 5mins)
+- Delete After: 1 View (1-100 and then Unlimited Views)  <input type range>
+- Decryption Key: Checkbox
+- Show a 'view secret' button first instead of showing the secret immediately when opening the link. (or Blurred Image): Checkbox
+- Only allow it to be viewed from my current IP address
+  (useful for sending a password to someone in the same office / network)
+- Description for the Secret.
+- Message for the viewer.
+
+
+Buttons:
+Done - Create a secret link
+- Save the above settings as the page default. (Use Cookies to store the views, days, retrieval=1, 
+
+Login/Register:
+Stay anonymous! Create an account using a temporary email address.
+https://www.mailinator.com/
+
+Messages to be Displayed on the Homepage:
+- All passwords are encrypted prior to storage and are available to only those with the secret link. Once expired, encrypted passwords are unequivocally deleted from the database.
+- Tip: Only enter the password into the box. Other identifying information can compromise security.
+
+
+Details Page:
+7205
+Views
+
+19997
+Users
+
+100
+Active Users
+
+103455
+Secrets
+
+
+Dashboard:
+Total secrets
+0
+Unopened secrets
+0
+Viewed secrets
+0
+Expired secrets
+0
+
+
+Why would I want to use it?
+When you send people sensitive info like passwords and private links via email or chat, there are copies of that information stored in many places. If you use a one-time link instead, the information persists for a single viewing which means it can't be read by someone else later. This allows you to send sensitive information in a safe way knowing it's seen by one person only. Think of it like a self-destructing message.
+
+
+Algorithm:
+To support this we have ensured that only the writer and the reader can ever know the contents. So, technically behind the scenes the following happens:
+
+
+Github Links:
+https://github.com/tkooda/temporalpw/blob/master/main.py
+https://github.com/pglombardo/PasswordPusher
+(About Page)  https://www.burnafterreading.me/
+(Feature Page) https://password.link/p/features
+https://password.link/u/secrets/new
+https://pwpush.com/en
+https://scrt.link/
+
+
+
+
+
+DATABASE QUERIES:
